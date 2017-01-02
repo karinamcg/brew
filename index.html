@@ -1,19 +1,160 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Brew | Smarter Coffee Habits</title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" media="screen and (min-device-width:1000px)" href="1000.css" />
-        <link rel="stylesheet" media="screen and (min-device-width:1000px)" href="1000.css" />
         <!-- 
         Karina McGourty
         Product Build
         STU-00001261
         09/01/17
         -->
+        <title>Brew | Smarter Coffee Habits</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css" type="text/css" media="screen"/>
     </head>
     <body>
-        <h1>My Heading</h1>
-        <p>My Paragraph</p>
+        <!-- START HEADER BLOCK -->
+        <header>
+<!--            <div class="row">-->
+                <figure>
+                    <a href="index.html"><img class="logo" alt="brew logo" src="images/brew_logo.png"/></a>
+                </figure>
+                
+                <div class="habits_title">
+                    <h1>Smarter Coffee Habits</h1>
+                    <span>Join the Revolution</span>
+                </div>
+                
+                <!-- START NAVIGATION -->
+                <span class="menu-trigger"><img alt="mobile-nav" src="images/mob-menu-trigger.png"/></span>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="our-story.html">Our Story</a></li>
+                            <li><a href="recipes.html">Recipes &amp; Tips</a></li>
+                            <li><a href="#">BREW Club</a></li>
+                            <li id="last"><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </nav>
+                <!-- END NAVIGATION -->
+<!--            </div>    -->
+        </header>
+        <!-- END HEADER BLOCK -->
+        
+        <!-- INTRODUCTION IMAGE -->
+        <section class="intro_image">
+            <figure>
+                <h2>How healthy are your coffee<br/>habits? Let's find out...</h2>
+            </figure>
+        </section>
+        
+        <!-- START HEALTH CHECK SECTION -->
+        <section class="health_check">
+            <div class="question">
+                <h3>How many cups per day?</h3>
+                <button type="button" class="toggle_btn">0</button>
+                <button type="button" class="toggle_btn">1-2</button>
+                <button type="button" class="toggle_btn">3-4</button>
+                <button type="button" class="toggle_btn">5-6</button>
+                <button type="button" class="toggle_btn">7+</button>
+            </div>
+            
+            <div class="question">
+                <h3>Sugar? How many?</h3>
+                <button type="button" class="toggle_btn_b">0</button>
+                <button type="button" class="toggle_btn_b">1-2</button>
+                <button type="button" class="toggle_btn_b">3-4</button>
+                <button type="button" class="toggle_btn_b">5+</button>
+            </div>
+            
+            <div class="question">
+                <h3>Time you usually have your first cup?</h3>
+                <button type="button" class="toggle_btn_c">Morning</button>
+                <button type="button" class="toggle_btn_c">Brunch</button>
+                <button type="button" class="toggle_btn_c">Lunch</button>
+                <button type="button" class="toggle_btn_c">Afternoon</button>
+                <button type="button" class="toggle_btn_c">Evening</button>
+                <button type="button" class="toggle_btn_c">Night</button>
+            </div>
+            
+            <div class="question">
+                <h3>Milk? What kind?</h3>
+                <select>
+                <option value="none">None</option>
+                <option disabled>----Cows----</option>
+                <option value="Full">Full</option>
+                <option value="Semi-Skimmed">Semi-Skimmed</option>
+                <option value="Skimmed">Skimmed</option>
+                <option disabled>----Other----</option>
+                <option value="Almond">Almond</option>
+                <option value="Soya">Soya</option>
+                <option value="Hemp">Hemp</option>
+                <option value="Coconut">Coconut</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <h3>How strong?</h3>
+                <span class="strength_indicator">(0=Very Weak, 5=Very Strong)</span>
+                <button type="button" class="toggle_btn_d">0</button>
+                <button type="button" class="toggle_btn_d">1</button>
+                <button type="button" class="toggle_btn_d">2</button>
+                <button type="button" class="toggle_btn_d">3</button>
+                <button type="button" class="toggle_btn_d">4</button>
+                <button type="button" class="toggle_btn_d">5</button>
+            </div>
+            
+            <button id="analyse">Analyse</button>
+        </section>
+        <!-- END HEALTH CHECK SECTION -->
+        
+        <!-- START LINKS SECTION -->
+        <section class="home_links">
+            <!-- Recipe Image -->
+            <figure>
+                <a href="recipes.html"><img alt="Recipe Icon" src="images/recipes_icon_home.jpg"></a>
+            </figure>
+            
+            <!-- Shop Image -->
+            <figure>
+                <a href="shop"><img alt="Shop Icon" src="images/shop_icon_home.jpg"></a>
+            </figure>
+            
+            <!-- Our Story Image -->
+            <figure>
+                <a href="our-story.html"><img alt="Our Story" src="images/our_story_icon_home.jpg"></a>
+            </figure>
+        </section>
+        <!-- END LINKS SECTION -->
+        
+        <!-- START SOCIAL ICONS SECTION -->
+        <section class="social_icons">
+            <figure>
+                <a href="https://www.facebook.com"><img alt="facebook" src="images/facebook.png"></a>
+            </figure>
+                
+            <figure>
+                <a href="https://www.twitter.com"><img alt="twitter" src="images/twitter.png"></a>
+            </figure>
+                
+            <figure>
+                <a href="https://www.google.com"><img alt="google plus" src="images/google.png"></a>
+            </figure>
+                
+            <figure>
+                <a href="https://www.instagram.com"><img alt="instagram" src="images/instagram.png"></a>
+            </figure>
+        </section>
+        <!-- END SOCIAL ICONS SECTION -->
+        
+        <!-- START FOOTER -->
+        <footer>
+            <p class="footer_copyright">&copy; 2017 BREW, LLC.<br>All Rights Reserved</p>
+            <p class="footer_up"><a href="#"><img src="images/up_arow.png"></a></p>
+        </footer>
+        <!-- END FOOTER -->
     </body>
 </html>
