@@ -381,22 +381,29 @@ DESKTOP STYLES
     }
     
     nav ul li#last a {
-    background:#86162c;
-    border-botton:none;
-    font-weight:bold;
+        background:#86162c;
+        border-botton:none;
+        font-weight:bold;
     }
     
     section.intro_image figure h2, section.intro_image_other figure h2 {
-        display:none;
+        position:absolute;
+        top:10%;
+        left:0;
+        color:#fff;
+        padding:2%;
+        bottom:0;
+        background:transparent;
+        font-size:290%;
     }
     
-    section.intro_image figure {
-    background: url(images/desktop_home_brew_coffee.jpg) no-repeat 33% 52%;
-    height:300px;
-    width:100%;
-    margin:0 auto;
-    position:relative;
-    text-align:center;
+    section.intro_image figure, section.intro_image_other figure {
+        background: url(images/desktop_home_brew_coffee.jpg) no-repeat 33% 52%;
+        height:300px;
+        width:100%;
+        margin:0 auto;
+        position:relative;
+        text-align:center;
     }
     
     section.health_check {
