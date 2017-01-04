@@ -410,4 +410,29 @@ DESKTOP STYLES
         width:80%;
         margin-top:2%;
     }
+    
+    .our_story_bodyguards img {
+        width:50%;
+    }
+    
+    section.recipe_circles figure img {
+        width:auto;
+    }
+    
+    h1 {
+        font-size:140%;
+        margin:0;
+    }
+
+    h2 {
+        font-size:130%;
+    }
+
+    h3 {
+        font-size:120%;
+    }
+
+    h4 {
+        font-size:110%;
+    }
 }
