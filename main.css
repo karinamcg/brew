@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding:0;
     font-size:100%;
+    color:#000;
 }
 
 h1 {
@@ -28,7 +29,7 @@ p {
 }
 
 header {
-	background: #8e8a8a;
+	background:#8e8a8a;
     width:100%;
     height:70px;
     display:table;
@@ -63,6 +64,11 @@ header figure img {
 section.intro_image, section.intro_image_other {
     position:relative;
     text-align:center;
+}
+
+section.home_icons_desktop {
+    visibility:hidden;
+    display:none;
 }
 
 section.intro_image figure {
@@ -236,18 +242,6 @@ nav ul li a:link, nav ul li a:visited {
         text-decoration:none;
 }
 
-/*section.health_check .question button {
-        width:39%;
-        font-size:90%;
-        background:#fff;
-        color:#86162c;
-        border-radius:5px;
-        border:0;
-        margin:2%;
-        padding:1%;
-        font-weight:bold;
-}*/
-
 .strength_indicator{
         font-size:75%;
         font-style:italic;
@@ -319,6 +313,27 @@ footer {
 DESKTOP STYLES
 ********************************************/
 @media screen and (min-width:992px) {
+    h1 {
+        font-size:140%;
+        margin:0;
+    }
+
+    h2 {
+        font-size:130%;
+    }
+
+    h3 {
+        font-size:145%;
+    }
+
+    h4 {
+        font-size:110%;
+    }
+    
+    p {
+        font-size:100%;
+    }
+    
     nav {
         padding:2%;
         display:block;
@@ -372,12 +387,12 @@ DESKTOP STYLES
         margin:0 auto;
     }
     
-    .footer_copyright {
-        padding:1%;
+    section.health_check .question button {
+        font-size:150%;
     }
     
-    p {
-        font-size:100%;
+    .footer_copyright {
+        padding:1%;
     }
     
     nav ul li#last a {
@@ -407,7 +422,7 @@ DESKTOP STYLES
     }
     
     section.health_check {
-        width:80%;
+        width:65%;
         margin-top:2%;
     }
     
@@ -419,20 +434,24 @@ DESKTOP STYLES
         width:auto;
     }
     
-    h1 {
-        font-size:140%;
-        margin:0;
+    section.home_links figure {
+        display:none;
     }
-
-    h2 {
-        font-size:130%;
+    
+    section.home_icons_desktop {
+        margin:4% auto 0;
+        text-align:center;
+        visibility:visible;
+        display:block;
     }
-
-    h3 {
-        font-size:120%;
+    
+    section.home_icons_desktop figure {
+        display:inline-block;
     }
-
-    h4 {
-        font-size:110%;
+    
+    section.home_icons_desktop figure a {
+        text-decoration:none;
+        color:#000;
     }
+    
 }
