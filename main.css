@@ -1,3 +1,11 @@
+/************************ 
+    Karina McGourty
+    Product Build
+    STU-00001261
+    09/01/17
+************************/
+
+/* GENERAL STYLES - MOBILE */
 body {
     background:#fff;
     font-family: 'Raleway', sans-serif;
@@ -61,6 +69,44 @@ header figure img {
 	font-size:50%;
 }
 
+/* NAV */
+nav ul li:last-child {
+    border-bottom:none;
+}
+
+nav ul li {
+    float:none;
+    list-style:none;
+    color:#fff;
+}
+
+.menu-trigger{
+    display:block;
+    cursor:pointer;
+}
+
+nav {
+    display:none;
+  
+}
+
+.nav-expanded{
+    display:block;
+    line-height:170%;
+}
+
+nav ul {
+    margin-top:10%;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    padding:0 2% 0;
+    color:#fff;
+    text-decoration:none;
+}
+
+/* HOME - INTRODUCTION */
 section.intro_image, section.intro_image_other {
     position:relative;
     text-align:center;
@@ -103,6 +149,7 @@ section.intro_image figure h2, section.intro_image_other figure h2 {
     right:0;
 }
 
+/* HOME - HEALTH CHECK */
 section.health_check {
     background:#999b9a;
     width:85%;
@@ -113,27 +160,74 @@ section.health_check {
     color:#fff;
 }
 
-section.home_links figure {
+#analyse {
+    font-size:120%;
+    font-weight:bold;
+    margin:-5% 5% 5%;
+    background:#86162c;
+    color:#fff;
+    border:0;
+    text-transform:uppercase;
+    padding:3%;
+}
+
+section.health_check .question .active{
+    background:#86162c;
+    border:0;
+    color:#fff;
+}
+
+section.health_check .question button.toggle_btn:active{
+    background:#86162c;
+    border:0;
+    color:#fff;
+}
+
+section.health_check .question button {
+    width:39%;
+    font-size:90%;
+    background:#fff;
+    color:#86162c;
+    border-radius:5px;
+    border:0;
+    margin:2%;
+    padding:1%;
+    font-weight:bold;
+}
+
+.strength_indicator{
+    font-size:75%;
+    font-style:italic;
+}
+
+.how_strong_desktop {
+    visibility:hidden;
+}
+
+/* HOME - PAGE LINKS AREA */
+.home_links figure {
     margin:10% auto 0;
     text-align:center;
 }
 
-section.social_icons {
+/* HOME - SOCIAL LINKS AREA */
+.social_icons {
     margin:0 auto;
     text-align:center;
 }
 
-section.social_icons figure {
+.social_icons figure {
     display:inline-block;
     margin:5% 5% 5% auto;
 }
 
-section.social_icons figure a img {
+.social_icons figure a img {
     width:100px;
     height:100px;
     display:block;
 }
 
+/* RECIPE PAGE */
 section.recipe_circles figure {
     margin:10% auto 0;
     text-align:center;
@@ -160,15 +254,17 @@ section.recipe_circles figure:hover img {
      transform:scale(1.10);
 }
 
+/* OUR STORY PAGE */
 .our_story_bodyguards img {
 	width:100%;
 }
 
-div.our_story_content {
+.our_story_content {
     text-align:center;
     padding:4%;
 }
 
+/* SHOP PAGE */
 .shop_heading h2 {
 	color:#86162c;
     text-align:center;
@@ -207,80 +303,6 @@ section.shop_products figure {
 .shop_products {
 	margin-bottom:10%;
 }
-
-/* NAV */
-nav ul li:last-child {
-  border-bottom:none;
-}
-
-nav ul li {
-  float:none;
-  border-bottom:2px solid #86162c;
-  list-style:none;
-  color:#fff;
-}
-
-.menu-trigger{
-    display:block;
-    cursor:pointer;
-}
-
-nav {
-    display:none;
-  
-}
-
-.nav-expanded{
-    display:block;
-    line-height:170%;
-}
-
-nav ul li a:link, nav ul li a:visited {
-        display:block;
-        padding:0 2% 0;
-        color:#fff;
-        text-decoration:none;
-}
-
-.strength_indicator{
-        font-size:75%;
-        font-style:italic;
-}
-
-#analyse {
-    font-size:120%;
-    font-weight:bold;
-    margin:5%;
-    background:#86162c;
-    color:#fff;
-    border:0;
-    text-transform:uppercase;
-    padding:3%;
-}
-
-section.health_check .question .active{
-    background:#86162c;
-    border:0;
-    color:#fff;
-}
-
-section.health_check .question button.toggle_btn:active{
-    background:#86162c;
-    border:0;
-    color:#fff;
-}
-
-section.health_check .question button {
-   width:39%;
-   font-size:90%;
-   background:#fff;
-   color:#86162c;
-   border-radius:5px;
-   border:0;
-   margin:2%;
-   padding:1%;
-   font-weight:bold;
-}
     
 /* Footer */
 footer {
@@ -313,13 +335,14 @@ footer {
 DESKTOP STYLES
 ********************************************/
 @media screen and (min-width:992px) {
+    /* GENERAL STYLES */
     h1 {
         font-size:140%;
         margin:0;
     }
 
     h2 {
-        font-size:130%;
+        font-size:220%;
     }
 
     h3 {
@@ -334,6 +357,7 @@ DESKTOP STYLES
         font-size:100%;
     }
     
+    /* NAV */
     nav {
         padding:2%;
         display:block;
@@ -350,10 +374,11 @@ DESKTOP STYLES
         margin:0 3% 3%;
         padding:1%;
         font-size:110%;
+        border-bottom:1px solid transparent;
     }
     
     nav ul li a:hover {
-        border-bottom:1px solid #86162c;
+        border-color:#86162c;
     }
     
     nav ul {
@@ -370,37 +395,13 @@ DESKTOP STYLES
         display:inline;
     }
     
-    header figure {
-        width:300px;
-    }
-    
-    header figure img {
-        width:45%;
-    }
-    
-    header .habits_title {
-        display:none;
-    }
-    
-    section.health_check {
-        width:100%;
-        margin:0 auto;
-    }
-    
-    section.health_check .question button {
-        font-size:150%;
-    }
-    
-    .footer_copyright {
-        padding:1%;
-    }
-    
-    nav ul li#last a {
+     nav ul li#last a {
         background:#86162c;
         border-botton:none;
         font-weight:bold;
     }
     
+    /* HOME - INTRODUCTION */
     section.intro_image figure h2, section.intro_image_other figure h2 {
         position:absolute;
         top:10%;
@@ -421,20 +422,44 @@ DESKTOP STYLES
         text-align:center;
     }
     
+    /* HOME - HEALTH CHECK */
     section.health_check {
         width:65%;
         margin-top:2%;
     }
     
-    .our_story_bodyguards img {
+    section.health_check .question button {
+        font-size:150%;
+    }
+    
+    #slider {
         width:50%;
+        margin:0 auto;
     }
     
-    section.recipe_circles figure img {
-        width:auto;
+    .how_strong_desktop div {
+        font-size:210%;
     }
     
-    section.home_links figure {
+    .how_strong_desktop {
+        visibility:visible;
+        margin-top:3%;
+    }    
+    
+    .how_strong_mob {
+        display:none;
+    }
+    
+    select {
+        font-size:160%;
+    }
+    
+    #analyse {
+        margin:5%;
+    }
+    
+     /* HOME - GENERAL */
+    .home_links figure {
         display:none;
     }
     
@@ -452,6 +477,98 @@ DESKTOP STYLES
     section.home_icons_desktop figure a {
         text-decoration:none;
         color:#000;
+    }
+    
+    header figure {
+        width:300px;
+    }
+    
+    header figure img {
+        width:45%;
+    }
+    
+    header .habits_title {
+        display:none;
+    }
+    
+    /* OUR STORY PAGE*/
+    .our_story_content {
+        width:92%;
+        height:420px;
+    }
+    
+    .clear {
+        clear:both;
+    }
+    
+    .our_story_left {
+        float:left;
+        width:50%;
+    }
+    
+    .our_story_right {
+        float:right;
+        width:50%;
+    }
+    
+    .our_story_bodyguards img {
+        width:50%;
+    }
+    
+    /* RECIPE PAGE */
+    section.recipe_circles {
+        margin:0 auto;
+        text-align:center;
+    }
+    
+    section.recipe_circles figure {
+        display:inline-block;
+        margin:2%;
+    }
+    
+    section.recipe_circles figure img {
+        width:70%;
+    }
+    
+    section.recipe_circles figure {
+        margin:4% 0;
+    }
+    
+    /* SHOP PAGE */
+    .shop_heading {
+        margin-top:0;
+    }
+    
+    .shop_heading h3 {
+        margin-top:-1%;
+    }
+    
+    section.shop_products figure {
+        margin:5% auto 0;
+    }
+    
+    .product_add_to_cart {
+        padding:2%;
+        width:60%;
+    }
+    
+    section.shop_products {
+        margin:0 auto;
+        text-align:center;
+    }
+    
+    section.shop_products figure {
+        display:inline-block;
+        margin:2%;
+    }
+    
+    /* FOOTER */
+    .footer_copyright {
+        padding:1% 0 0 4%;
+    }
+    
+    .footer_up img {
+        padding:7% 37%;
     }
     
 }

@@ -11,9 +11,11 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!-- http://jquery.com/ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!-- https://jqueryui.com/ -->
         <script src="main.js"></script>
         <link rel="stylesheet" href="main.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" type="text/css" media="screen"/><!-- https://jqueryui.com/ -->
     </head>
     <body>
         <!-- START HEADER BLOCK -->
@@ -121,20 +123,27 @@
             <div class="question">
                 <h3>How strong?</h3>
                 <span class="strength_indicator">(0=Very Weak, 5=Very Strong)</span>
+                <div class="how_strong_mob">
                 <button type="button" class="toggle_btn_d">0</button>
                 <button type="button" class="toggle_btn_d">1</button>
                 <button type="button" class="toggle_btn_d">2</button>
                 <button type="button" class="toggle_btn_d">3</button>
                 <button type="button" class="toggle_btn_d">4</button>
                 <button type="button" class="toggle_btn_d">5</button>
+                </div>
+                
+                <div class="how_strong_desktop">
+                    <div id="slider"></div>
+                    <div id="slider_number">0</div>
+                </div>
             </div>
             
             <button id="analyse">Analyse</button>
         </section>
         <!-- END HEALTH CHECK SECTION -->
         
-        <!-- START LINKS SECTION -->
-        <section class="home_links">
+        <!-- START LINKS AREA -->
+        <div class="home_links">
             <!-- Recipe Image -->
             <figure>
                 <a href="recipes.html"><img alt="Recipe Icon" src="images/recipes_icon_home.jpg"></a>
@@ -149,11 +158,11 @@
             <figure>
                 <a href="our-story.html"><img alt="Our Story" src="images/our_story_icon_home.jpg"></a>
             </figure>
-        </section>
-        <!-- END LINKS SECTION -->
+        </div>
+        <!-- END LINKS AREA -->
         
-        <!-- START SOCIAL ICONS SECTION -->
-        <section class="social_icons">
+        <!-- START SOCIAL ICONS AREA -->
+        <div class="social_icons">
             <figure>
                 <a href="https://www.facebook.com"><img alt="facebook" src="images/facebook.png"></a>
             </figure>
@@ -169,13 +178,13 @@
             <figure>
                 <a href="https://www.instagram.com"><img alt="instagram" src="images/instagram.png"></a>
             </figure>
-        </section>
-        <!-- END SOCIAL ICONS SECTION -->
+        </div>
+        <!-- END SOCIAL ICONS AREA -->
         
         <!-- START FOOTER -->
         <footer>
             <p class="footer_copyright">&copy; 2017 BREW, LLC.<br>All Rights Reserved</p>
-            <p class="footer_up"><a href="#"><img src="images/up_arow.png"></a></p>
+            <p class="footer_up"><a href="#"><img src="images/up_arow.png" alt="jump to top"></a></p>
         </footer>
         <!-- END FOOTER -->
     </body>

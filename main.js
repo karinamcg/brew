@@ -1,3 +1,10 @@
+/************************ 
+    Karina McGourty
+    Product Build
+    STU-00001261
+    09/01/17
+************************/
+
 /* Mobile Navigation Toggle */
 jQuery(document).ready(function () {
   jQuery(".menu-trigger").click(function () {
@@ -27,7 +34,16 @@ jQuery(".toggle_btn").click(function(){
             jQuery(this).toggleClass('active'); 
     });  
     
-  });
+    /*  Health Check Slider */
+    $("#slider").slider({
+        max: 10,
+        min: 0, 
+        change: function(event, ui) {
+            $("#slider_number").html(ui.value);
+        }
+    });
+    
+ });
 
 
 
